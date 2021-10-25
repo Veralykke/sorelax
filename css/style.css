@@ -87,7 +87,7 @@ justify-content: space-between;
     top: 0;
     left: 0;
     /*background:rgba(0, 0, 0, 0.5) ; Can do it like this too*/
-    background: #65aed0;
+    background: #81c1df;
     mix-blend-mode: overlay;
 }
 .text-homepage a {
@@ -112,4 +112,29 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.social-icons li {
+    list-style: none;
+}
+.social-icons li a {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.5);
+    filter: invert(1);
+    transition: 0.5s;
+}
+.social-icons li a {
+    transform: scale(0.5) translateY(-15px);
+}
+@media (max-width: 991px) {
+    .showcase-container,
+    .showcase header {
+        padding: 40px;
+    }
+    .text h2 {
+        font-size: 3em;
+    }
+    .text h3 {
+        font-size: 2em;
+    }
 }
